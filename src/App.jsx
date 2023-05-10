@@ -3,6 +3,7 @@ import {Antra, Ketvirta, Penkta, Pirma, Trecia} from './Components/Base-list/rea
 import {DogsCapi, DogsColor, DogsInCircle, DogsInFigures, DogsInSquare} from './Components/Base-list/react-base-list';
 import State01 from './Components/State/State01';
 import State02 from './Components/State/State02';
+import State03 from './Components/State/State03';
 import State04 from './Components/State/State04';
 import State05 from './Components/State/State05';
 function App() {
@@ -13,8 +14,9 @@ function App() {
 
       {/* <State01 /> */}
       {/* <State02 /> */}
+      <State03 />
       {/* <State04 /> */}
-      <State05 />
+      {/* <State05 /> */}
 
 
       {/*Base*/}
