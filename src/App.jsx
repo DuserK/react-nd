@@ -4,6 +4,7 @@ import {DogsCapi, DogsColor, DogsInCircle, DogsInFigures, DogsInSquare} from './
 import State01 from './Components/State/State01';
 import State02 from './Components/State/State02';
 import State04 from './Components/State/State04';
+import State05 from './Components/State/State05';
 function App() {
   return (
     <div className="App">
@@ -11,8 +12,9 @@ function App() {
       {/*State*/}
 
       {/* <State01 /> */}
-      <State02 />
+      {/* <State02 /> */}
       {/* <State04 /> */}
+      <State05 />
 
 
       {/*Base*/}
