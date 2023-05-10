@@ -1,14 +1,19 @@
-import './App.css';
+import './App.scss';
 import {Antra, Ketvirta, Penkta, Pirma, Trecia} from './Components/Base-list/react-base';
 import {DogsCapi, DogsColor, DogsInCircle, DogsInFigures, DogsInSquare} from './Components/Base-list/react-base-list';
+import State01 from './Components/State/State01';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      {/*State*/}
+
+      <State01 />
+
 
       {/*Base*/}
 
-      <Pirma />
+      {/* <Pirma />
 
       <Antra tekstas="Antra uzduotis"/>
 
@@ -16,7 +21,7 @@ function App() {
 
       <Ketvirta tekstas1 = "Hello" tekstas2 ="world" />
 
-      <Penkta tekstas1 = "Hello" tekstas2 ="world" spalva="green"/>
+      <Penkta tekstas1 = "Hello" tekstas2 ="world" spalva="green"/> */}
       {/*Base-list*/}
 
       {/* <DogsInSquare />
