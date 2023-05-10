@@ -21,7 +21,37 @@
   align-items: center;
   color:white;
   font-size: 40px;
+  background-color: orangered;
+  transition: 0.2s;
+}
+.button {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: 15px;
+  background-color: rgb(103, 103, 103);
+  border-radius: 30px;
+  transition: 0.2s;
+}
+
+.shape {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: 40px;
   background-color: olive;
   transition: 0.2s;
 }
 
+.btn-blue {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  margin: 5px;
+}

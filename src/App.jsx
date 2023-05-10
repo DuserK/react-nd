@@ -2,13 +2,17 @@ import './App.scss';
 import {Antra, Ketvirta, Penkta, Pirma, Trecia} from './Components/Base-list/react-base';
 import {DogsCapi, DogsColor, DogsInCircle, DogsInFigures, DogsInSquare} from './Components/Base-list/react-base-list';
 import State01 from './Components/State/State01';
+import State02 from './Components/State/State02';
+import State04 from './Components/State/State04';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
       {/*State*/}
 
-      <State01 />
+      {/* <State01 /> */}
+      <State02 />
+      {/* <State04 /> */}
 
 
       {/*Base*/}
