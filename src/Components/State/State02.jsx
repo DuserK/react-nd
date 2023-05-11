@@ -22,8 +22,8 @@ export default function State02() {
     return (
         <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30}}>
             <div style={{display: "flex", gap: 30}}>
-                <button className="button" onClick={changeShape}>CHANGE</button>
-                <button className="button" onClick={randNumber}>RANDOM</button>
+                <button className="button-63" onClick={changeShape}>CHANGE</button>
+                <button className="button-63" onClick={randNumber}>RANDOM</button>
             </div>
 
             <div className="btn" style={{borderRadius: shape}}>
