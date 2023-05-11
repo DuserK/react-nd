@@ -16,17 +16,21 @@ export default function State02() {
 
     const [shape, setShape] = useState("0");
     const changeShape =_=> {
-        setShape(shape === "0" ? "50%" : "0");
+        // setShape(shape === "0" ? "50%" : "0"); go to jail
+        setShape(s => s === "0" ? "50%" : "0");
     } 
     
     return (
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30}}>
+        <div style={{display: "flex", 
+                    flexDirection: "column", 
+                    alignItems: "center",
+                     gap: 40}}>
             <div style={{display: "flex", gap: 30}}>
-                <button className="button-63" onClick={changeShape}>CHANGE</button>
-                <button className="button-63" onClick={randNumber}>RANDOM</button>
+                <button className="btn btn-green" onClick={changeShape}>CHANGE</button>
+                <button className="btn btn-green" onClick={randNumber}>RANDOM</button>
             </div>
 
-            <div className="btn" style={{borderRadius: shape}}>
+            <div className="shape" style={{borderRadius: shape}}>
                 <h2>{number}</h2>
             </div>
         </div>

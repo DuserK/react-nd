@@ -13,10 +13,10 @@ function App() {
       {/*State*/}
 
       {/* <State01 /> */}
-      <State02 />
+      {/* <State02 /> */}
       {/* <State03 /> */}
       {/* <State04 /> */}
-      {/* <State05 /> */}
+      <State05 />
 
 
       {/*Base*/}

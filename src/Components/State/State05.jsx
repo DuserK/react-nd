@@ -2,25 +2,30 @@
 import { useState } from "react";
 
 export default function State05 () {
-    const [squareList, setSquareList] = useState([])
-    const addSquareRed =_=> {
-        setSquareList([...squareList, <div className="btn-red"></div>]);
-    }
-    const addSquareBlue =_=> {
-        setSquareList([...squareList, <div className="btn-blue"></div>]);
-    }
-    const addSquareReset =_=> {
-        setSquareList([]);
-    }
-    
+    const [squareList, setSquareList] = useState([]);
+
+    const addSquare = s => setSquareList(sq =>[...sq,s]);
     return (
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: 30, maxWidth:"80%"}}>
-            <button className="button" style={{backgroundColor: "red"}} onClick={addSquareRed}>Add red</button>
-            <button className="button " style={{backgroundColor: "blue"}} onClick={addSquareBlue}>Add blue</button>
-            <button className="button" onClick={addSquareReset}>Reset</button>
-            <div style={{display: "flex", flexWrap: "wrap"}}>
-                {squareList}
+        <>
+        <div style={{display: "flex", 
+                    flexDirection: "column", 
+                    alignItems: "center", 
+                    gap: 30, 
+                    maxWidth:"80%"}}>
+            <button className="btn btn-blue" onClick={_ =>addSquare('B')}>ADD</button>
+            <button className="btn btn-red" onClick={_=>addSquare('R')}>ADD</button>
+
+            <div style={{display: "flex", 
+                        flexWrap: "wrap",
+                        justifyContent:"center"}}>
+                {squareList.map((a, i) => 
+                <div className="shape btn-blue" style={{
+                    backgroundColor: a === "R"? "#e74c3c" : "#3498db",
+                    margin: "10px"
+                }} key={i}></div>
+                )}
             </div>
         </div>
+        </>
     )
 }
