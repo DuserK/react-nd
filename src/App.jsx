@@ -6,6 +6,9 @@ import State02 from './Components/State/State02';
 import State03 from './Components/State/State03';
 import State04 from './Components/State/State04';
 import State05 from './Components/State/State05';
+import State21 from './Components/State2/State21';
+import State22 from './Components/State2/State22';
+import State23 from './Components/State2/State23';
 function App() {
   return (
     <div className="App">
@@ -16,9 +19,12 @@ function App() {
       {/* <State02 /> */}
       {/* <State03 /> */}
       {/* <State04 /> */}
-      <State05 />
+      {/* <State05 /> */}
+      {/* <State21 /> */}
+      {/* <State22 /> */}
+      <State23 />
 
-
+  
       {/*Base*/}
 
       {/* <Pirma />
